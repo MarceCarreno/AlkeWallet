@@ -29,7 +29,7 @@ jQuery
 LocalStorage (almacenamiento local del navegador)
 
 🔐 Credenciales de prueba
-Email: admin@gmail.com
+Email: testing@gmail.com
 Password: 1234
 
 📂 Estructura del proyecto
@@ -78,3 +78,4 @@ Desarrollar una aplicación web interactiva utilizando manipulación del DOM, ev
 👤 Autoría
 
 Proyecto desarrollado como práctica de fundamentos de desarrollo Frontend.
+
