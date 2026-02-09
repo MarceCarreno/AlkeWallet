@@ -141,7 +141,7 @@ $(document).ready(function () {
     let email = $("#email").val().trim();
     let pass = $("#password").val();
 
-    if (email === "admin@gmail.com" && pass === "1234") {
+    if (email === "testing@gmail.com" && pass === "1234") {
 
       guardarSaldo();
       window.location = "menu.html";

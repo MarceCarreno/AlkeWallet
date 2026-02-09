@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+<html>
 <head>
   <title>Wallet - Menú Principal</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
   <style>
     body {
       padding: 20px;
-      background-color: #f5f5f5;
+      background: linear-gradient(135deg, #59f7e9 0%, #591063 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .container {
@@ -13,9 +19,14 @@
       margin: 0 auto;
     }
 
+    .menu{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
     .balance-card {
-      background: linear-gradient(135deg, #59f7e9 0%, #22043f 100%);
-      color: white;
+      background: #ffff;
+      color: #591063;
       padding: 30px;
       border-radius: 10px;
       margin-bottom: 30px;
@@ -32,48 +43,55 @@
       margin-bottom: 5px;
     }
 
+    h2 {
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    /* BOTONES MENU */
+
+    .menu-buttons a {
+      text-decoration: none;
+      color: white;
+    }
+
     .menu-buttons .btn {
       margin-bottom: 15px;
       padding: 15px;
       font-size: 1.1em;
+      transition: all 0.25s ease;
+      border: none;
     }
 
-    h2 {
-      color: #333;
-      margin-bottom: 20px;
+    .menu-buttons .btn:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      filter: brightness(90%);
+      color: white;
+      background-color: #7428a7;
     }
 
-    a {
-  text-decoration: none;
-  color: white;
-  }
-
-  a:hover {
-  text-decoration: none;
-  color: white;
-  }
-
+    /* COLORES BOTONES */
 
     .btn-depositar {
-      background-color: #28a745;
-      border-color: #28a745;
+      background-color: #591063;
     }
 
     .btn-enviar {
-      background-color: #007bff;
-      border-color: #007bff;
+      background-color: #793c8f;
     }
 
     .btn-movimientos {
-      background-color: #6c757d;
-      border-color: #6c757d;
+      background-color: #a25bb4;
     }
+
   </style>
 </head>
+
 <body>
   <div class="container" id="menu">
-    <h2>Menú Principal</h2>
-    
+    <h2 class="menu">Menú Principal</h2>
+
     <div class="balance-card">
       <label>Dinero en cuenta:</label>
       <h3 id="balance">$0</h3>
@@ -85,6 +103,7 @@
       <a href="transactions.html" class="btn btn-movimientos btn-block">📊 Últimos Movimientos</a>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../js/script.js"></script>
 </body>
