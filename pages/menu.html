@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <title>Wallet - Menú Principal</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .balance-card {
+      background: linear-gradient(135deg, #59f7e9 0%, #22043f 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .balance-card h3 {
+      font-size: 2.5em;
+      margin: 10px 0;
+    }
+
+    .balance-card label {
+      opacity: 0.9;
+      margin-bottom: 5px;
+    }
+
+    .menu-buttons .btn {
+      margin-bottom: 15px;
+      padding: 15px;
+      font-size: 1.1em;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    a {
+  text-decoration: none;
+  color: white;
+  }
+
+  a:hover {
+  text-decoration: none;
+  color: white;
+  }
+
+
+    .btn-depositar {
+      background-color: #28a745;
+      border-color: #28a745;
+    }
+
+    .btn-enviar {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-movimientos {
+      background-color: #6c757d;
+      border-color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="menu">
+    <h2>Menú Principal</h2>
+    
+    <div class="balance-card">
+      <label>Dinero en cuenta:</label>
+      <h3 id="balance">$0</h3>
+    </div>
+
+    <div class="menu-buttons">
+      <a href="deposit.html" class="btn btn-depositar btn-block">💰 Depositar</a>
+      <a href="sendmoney.html" class="btn btn-enviar btn-block">📤 Enviar Dinero</a>
+      <a href="transactions.html" class="btn btn-movimientos btn-block">📊 Últimos Movimientos</a>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

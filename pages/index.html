@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wallet - Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+      background: linear-gradient(135deg, #59f7e9 0%, #22043f 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 400px;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+
+    .info-box {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2> Alke Wallet</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required>
+      </div>
+
+      <div class="form-group">
+        <label>Contraseña:</label>
+        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">
+        Iniciar sesión
+      </button>
+    </form>
+
+    <div class="info-box">
+      <strong>Credenciales de prueba:</strong><br>
+      Email: admin@gmail.com<br>
+      Contraseña: 1234
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

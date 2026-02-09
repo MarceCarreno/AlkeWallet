@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wallet - Enviar Dinero</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .contact-item {
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .contact-item:hover {
+      background-color: #e9ecef;
+    }
+
+    .contact-item.selected {
+      background-color: #007bff;
+      color: white;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .btn-secondary {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Enviar Dinero</h2>
+    <form id="sendForm">
+
+      <div class="form-group">
+        <label>Buscar contacto:</label>
+        <input type="text" class="form-control" id="searchContact" placeholder="Buscar por nombre...">
+      </div>
+
+      <h5>Contactos</h5>
+      <ul id="contactList" class="list-group mb-3">
+        <!-- Los contactos se cargarán dinámicamente -->
+      </ul>
+
+      <div class="form-group">
+        <label>Monto a enviar:</label>
+        <input type="number" class="form-control" id="sendAmount" placeholder="Ingrese el monto" min="1" required>
+      </div>
+
+      <div class="form-group">
+        <label>Concepto (opcional):</label>
+        <input type="text" class="form-control" id="concepto" placeholder="Ej: Pago comida">
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">
+        Enviar dinero
+      </button>
+
+    </form>
+
+    <hr>
+    
+    <h5>Agregar nuevo contacto</h5>
+    <form id="addContactForm">
+      <div class="form-group">
+        <input type="text" class="form-control" id="newContactName" placeholder="Nombre del contacto" required>
+      </div>
+      <button type="submit" class="btn btn-success btn-sm">Agregar Contacto</button>
+    </form>
+
+    <a href="menu.html" class="btn btn-secondary btn-block">Volver al Menú Principal</a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wallet - Depositar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .current-balance {
+      background: #e9ecef;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .current-balance h4 {
+      margin: 0;
+      color: #28a745;
+    }
+
+    .btn-primary {
+      background-color: #28a745;
+      border-color: #28a745;
+    }
+
+    .btn-primary:hover {
+      background-color: #218838;
+      border-color: #1e7e34;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>💰 Depositar</h2>
+    
+    <div class="current-balance">
+      <small>Saldo actual:</small>
+      <h4 id="currentBalance">$0</h4>
+    </div>
+
+    <form id="depositForm">
+      <div class="form-group">
+        <label for="depositAmount">Monto a depositar:</label>
+        <input type="number" class="form-control" id="depositAmount" placeholder="Ingrese el monto" min="1" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Realizar depósito</button>
+    </form>
+    <a href="menu.html" class="btn btn-secondary btn-block mt-3">Volver al Menú Principal</a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
+</html>
